@@ -8,12 +8,13 @@
 <body>
     
     <div class="container">
-        <div class="item item--1">1: Orange</div>
-        <div class="item item--2">2: Green</div>
-        <div class="item item--3">3: Violet</div>
-        <div class="item item--4">4: Pink</div>
-        <div class="item item--5">5: Blue</div>
-        <div class="item item--6">6: Brown</div>
+        <div class="item item--1">Header</div>
+        <div class="item item--2">Small box 1</div>
+        <div class="item item--3">Small box 2</div>
+        <div class="item item--4">Small box 3</div>
+        <div class="item item--5">SideBar</div>
+        <div class="item item--6">Main content</div>
+        <div class="item item--7">Footer</div>
     </div>
 
 </body>
@@ -30,32 +31,40 @@
         margin: 30px auto;
         background-color: #eee;
     }
+    .item{
+        min-height: 120px;
+    }
 
     .item--1{
         background-color: orangered;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-row: 1;
+        grid-column: 1/-1 ;
     }
 
     .item--2{
-        background-color: greenyellow;
-        grid-row: 1/2;
-        grid-column: 1/span 2;
+        background-color: orangered;
+        grid-row: 2;
     }
 
     .item--3{
-        background-color: purple;
+        background-color: orangered;
+        grid-row: 2;
     }
     .item--4{
-        background-color: pink;
+        background-color: orangered;
+        grid-row: 2;
     }
     .item--5{
-        background-color: blue;
+        background-color: orangered;
+        grid-row: 2;
     }
     .item--6{
-        background-color: goldenrod;
+        background-color: orangered;
+        grid-row: 3;
+    }
+
+    .item--7{
+        background-color: orangered;
         grid-column: 1/-1;
     }
 
